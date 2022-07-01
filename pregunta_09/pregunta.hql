@@ -51,3 +51,4 @@ ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
 
 SELECT a.c1,a.c2,b.c4[a.c2] from tbl0 a JOIN tbl1 b on a.c1 = b.c1;
 
+
