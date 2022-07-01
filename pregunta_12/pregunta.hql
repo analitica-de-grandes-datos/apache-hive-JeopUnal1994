@@ -23,3 +23,4 @@ LATERAL VIEW
 LATERAL VIEW
     EXPLODE(c3) t0 AS letters, numbers
 GROUP BY letter, letters;
+
