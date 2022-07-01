@@ -45,3 +45,4 @@ LOAD DATA LOCAL INPATH 'data.tsv' INTO TABLE t0;
 INSERT OVERWRITE LOCAL DIRECTORY 'output'
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
 SELECT a.keys,COUNT(a.keys) from (select EXPLODE(map_keys(d.c3)) keys from t0 d) a GROUP BY a.keys;
+
